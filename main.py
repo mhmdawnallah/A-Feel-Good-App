@@ -5,6 +5,10 @@ from kivy.uix.screenmanager import ScreenManager, Screen
 Builder.load_file('design.kv')
 
 class LoginScreen(Screen):
+    def sign_up(self):
+        self.manager.current = 'sign_up_screen'
+
+class SignUpScreen(Screen):
     pass
 
 class RootWidget(ScreenManager):
